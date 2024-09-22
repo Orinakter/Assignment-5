@@ -13,13 +13,73 @@
 
     <!-- Tailwind cdn link -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+              navcolor: '#F9F7F3',
+              navbutton: 'rgb(180, 244, 97)',
+              
+             
+
+              
+            }
+          }
+        }
+      }
+    </script>
     
 </head>
-<body>
+ <body class="container mx-auto bg-gray-100">
+    <header class="sticky top-0 z-50 bg-navcolor shadow-md">
+        <div class="navbar bg-navcolor">
+            <div class="navbar-start ">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+               
+              </div>
+              
+              <a class="btn btn-ghost text-xl bg-navbutton ml-8">Blog</a>
+            
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a><img src="./assets/logo.png" alt=""></a></li>
+                
+                <li class="text-3xl font-bold"><a>Donate Bangladesh</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end flex justify-center items-center">
+                <img src="./assets/coin.png" alt="">
+              <a class="btn">98600 BDT</a>
+            </div>
+          </div>
+        </header>
+        <main>
+          <section>
+            
+          </section>
+        </main>
 
-    
+     
     
 
     <script src="./js/index.js"></script>
 </body>
-</html>
+
+</html> 
