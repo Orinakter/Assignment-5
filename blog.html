@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en"data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-5</title>
+    <link rel="stylesheet" href="./js/index.js">
+    <!-- daisy UI link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Tailwind cdn link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+              navcolor: '#F9F7F3',
+              navbutton: 'rgb(180, 244, 97)',
+              border :  'rgba(17, 17, 17, 0.3)',
+              button: ' rgba(17, 17, 17, 0.05)',
+              colorBg : "rgba(245, 241, 248, 0.815)"
+              
+            
+              
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      .color{
+        background-color: rgba(245, 241, 248, 0.815);
+      }
+    </style>
+    
+</head>
+ <body class="container mx-auto">
+    <header class="sticky top-0 z-50 bg-navcolor shadow-md">
+         <div class="navbar bg-navcolor">
+            <div class="navbar-start ">
+             
+              
+              <button id="ButtonHome" class="btn btn-ghost text-xl bg-navbutton ml-8">Home</button>
+            
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a><img src="./assets/logo.png" alt=""></a></li>
+                
+                <li class="text-3xl font-bold"><a>Donate Bangladesh</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end flex justify-center items-center">
+                <img src="./assets/coin.png" alt="">
+              <p class="btn">98600 BDT</p>
+            </div>
+          </div>
+        </header>
+       
+    <main class="mt-40">
+        
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-1" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+            <div class="collapse-content">
+              <p>DOM, or Document Object Model, is a programming interface that represents structured documents like HTML and XML as a tree of objects</p>
+            </div>
+          </div>
+
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-1" />
+            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+              <p>Using getElementById: The getElementById method allows you to select an element by its ID. ...
+                Using getElementsByClassName.
+                Using getElementsByTagName.
+                Using querySelector. 
+                Using querySelectorAll.
+                Changing the Text Content.
+                Changing the HTML Content. </p>
+            </div>
+          </div>
+
+          <div class="collapse collapse-arrow join-item bg-base-200">
+            <input type="radio" name="my-accordion-1" />
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+            <div class="collapse-content">
+              <p>Event delegation in JavaScript is a pattern that efficiently handles events. Events can be added to a parent element instead of adding to every single element.</p>
+            </div>
+          </div>
+
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-1" />
+            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+            <div class="collapse-content">
+              <p>Element represents an HTML element in the DOM tree. Elements have properties that allow you to access and modify attributes, styles, and content</p>
+            </div>
+          </div>
+
+    </main>
+
+            
+
+
+
+    <script src="./js/blog.js"></script>
+</body>
+
+</html> 
