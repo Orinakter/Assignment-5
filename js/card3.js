@@ -4,18 +4,18 @@ document.getElementById("DonateButton3").addEventListener("click", function(){
     let Balance = textData("balance")
     let cardAmount = textData("card-amount3");
 
-    if(Balance>input || !isNaN(input) || input>0){
-        document.getElementById("DonateButton3").setAttribute("onclick", "my_modal_5.showModal()")
-    }
-    else{
-        document.getElementById("DonateButton3").removeAttribute("onclick", "my_modal_5.showModal()")
-    }
-
     if(Balance<input || isNaN(input) ||  input<0){
         alert("Input value Wrong input Positive number");
         return ;
     }
     else{
+
+        document.getElementById("modal3").setAttribute("href", "#my_modal_8");
+
+        document.getElementById("exitModal").addEventListener("click", function(){
+         document.getElementById("modal3").removeAttribute("href");
+          
+     });
        
        let totalDonation = cardAmount + input;
        let remainingBalance = Balance-input;
@@ -45,8 +45,6 @@ document.getElementById("DonateButton3").addEventListener("click", function(){
         
         `
         historySection.appendChild(div);
-
-
     }
       
 });
